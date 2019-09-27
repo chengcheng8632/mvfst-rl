@@ -118,7 +118,7 @@ function setup_libtorch() {
   echo -e "Installing libtorch CPU-only build into $LIBTORCH_DIR"
   cd "$DEPS_DIR"
 
-  wget https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-1.2.0.zip
+  wget --no-verbose https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-1.2.0.zip
 
   # This creates and populates $LIBTORCH_DIR
   unzip libtorch-cxx11-abi-shared-with-deps-1.2.0.zip
